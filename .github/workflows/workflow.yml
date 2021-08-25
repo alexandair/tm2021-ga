@@ -36,6 +36,6 @@ jobs:
         # You can change these environment variables for your configuration:   AZURE_SUBSCRIPTION_ID
         scope: subscription
         subscriptionId: ${{ env.AZURE_SUBSCRIPTION_ID }}
-        region: centralus # Set this to your target region
-        template: $GITHUB_WORKSPACE/azuredeploy.json  # Set this to the location of your template file
-        parameters: $GITHUB_WORKSPACE/azuredeploy.parameters.json # Set this to the location of your parameters file
+        region: westeurope # Set this to your target region
+        template: ./azuredeploy.json  # Set this to the location of your template file
+        parameters: ./azuredeploy.parameters.json # Set this to the location of your parameters file
